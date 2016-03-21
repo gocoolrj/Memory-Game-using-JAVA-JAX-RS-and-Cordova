@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>Welcome To Mind Game</title>
+
+        <link rel="stylesheet" href="libs/jquery.mobile-1.4.5.css">
+        <script src="libs/jquery-2.1.1.js"></script>
+        <script src="libs/jquery.mobile-1.4.5.js"></script>
+         <script src="memgame.js"></script>
+         <!--<script src="cardflick.js"></script>-->
+         <!--<script src="SSE.js"></script>-->
+        <link rel="stylesheet" href="card.css">
+
+    </head>
+    <body>
+
+
+        ------------------------------------------------------------Store and retrive player id-----------------------------------------------
+
+        <div id="home" data-role="page" >
+            <div data-role="header" data-position="fixed">
+                <h3>Header</h3>
+            </div>
+            <div role="main" class="ui-content">
+                <div class="ui-field-contain">
+                    <label for="gk-25hSlu">IMEI</label>
+                    <input type="text" placeholder="IMEI" name id="imei">
+                </div>
+                <div class="ui-field-contain">
+                    <label for="gk-25K669">Player Name</label>
+                    <input type="text" placeholder="Player Name" name id="playername">
+                </div>
+                <a class="ui-btn"  id="smtbtn">Submit</a>
+
+                <a class="ui-btn"  id="getIDbtn" href="#newgamepage" >Play Game</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h3>Footer</h3>
+            </div>
+        </div>
+
+        ------------------------Creating new game------------------------------------------------
+        <div id="newgamepage" data-role="page">
+            <div data-role="header" data-position="fixed">
+                <h3>Header</h3>
+            </div>
+            <div role="main" class="ui-content">
+                <label> PlayerId</label>
+                <div id="cino"></div>
+                <!--<label for="gk-25hSlu" id="playerid"></label>-->
+                <input type="text" name id="playerid" disabled>
+             
+                 
+                <a class="ui-btn" id="startnewgame" > Start New Game </a>
+                
+                
+              <ul id="gamesplayed" data-role="listview" data-inset="true">
+                  
+                 </ul>
+                
+
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h3>Footer</h3>
+            </div>
+        </div>  
+
+
+        <!--game play screen-->
+
+        <div id="gamehomepage" data-role="page" >
+            <div data-role="header" data-position="fixed">
+                <h3>Header</h3>
+                
+                  <label> GameID</label>
+            <input type="text" name id="Gid" disabled>
+             <label> PlayerID</label>
+            <input type="text" name id="Pid" disabled>
+                <div id="cino"></div>
+               
+            </div>
+          <div role="main" class="ui-content">
+                <div class="ui-grid-c" style="height:200%  " >
+                    <div class="ui-block-a" style="height:200%">
+                        <button id="btn1" style="width:200px;height:250px"></button>
+          
+                    <div>
+                        <pre id="content"></pre>
+                    </div>
+                  
+                              </div>
+                    <div class="ui-block-b" style="height:200%"><button id="btn2" style="width:200px;height:250px" ></button></div>
+                    <div class="ui-block-c" style="height:200%"><button id="btn3" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-d" style="height:200%"><button id="btn4" style="width:200px;height:250px"></button></div>
+                </div>
+                <div class="ui-grid-c" style="height:200% ">
+                    <div class="ui-block-a" style="height:200%"><button id="btn5" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-b" style="height:200%"><button id="btn6" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-c" style="height:200%"><button id="btn7" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-d" style="height:200%"><button id="btn8" style="width:200px;height:250px"></button></div>
+                </div>
+                <div class="ui-grid-c" style="height:100% ">
+                    <div class="ui-block-a" style="height:100%"><button id="btn9" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-b" style="height:100%"><button id="btn10" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-c" style="height:100%"><button id="btn11" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-d" style="height:100%"><button id="btn12" style="width:200px;height:250px"></button></div>
+                </div>
+                <div class="ui-grid-c" style="height:200%">
+                    <div class="ui-block-a" style="height:200%"><button id="btn13" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-b" style="height:200%"><button id="btn14" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-c" style="height:200%"><button id="btn15" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-d" style="height:200%"><button id="btn16" style="width:200px;height:250px"></button></div>
+                </div>
+                <div class="ui-grid-c" style="height:200% ">
+                    <div class="ui-block-a" style="height:200%"><button id="btn17" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-b" style="height:200%"><button id="btn18" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-c" style="height:200%"><button id="btn19" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-d" style="height:200%"><button id="btn20" style="width:200px;height:250px"></button></div>
+                </div>
+                   s<a class="ui-btn" id="submit" > Submit </a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h3>Footer</h3>
+            </div>
+        </div>-->
+        
+        
+        <!-------------------------------------CommonView----------------------------------->
+        
+        
+        
+        
+        
+         <div id="CommonView" data-role="page" >
+            <div data-role="header" data-position="fixed">
+                <h3>Header</h3>
+                
+                  <label> Gmaeid</label>
+                <div id="cino"></div>
+                <input type="text" name id="gameid" >
+                  <input type="text" id="content"/>
+            </div>
+          <div role="main" class="ui-content">
+                <div class="ui-grid-c" style="height:200%  " >
+                    <div class="ui-block-a" style="height:200%">
+                        <button id="btn1" style="width:200px;height:250px"></button>
+          
+                    <div>
+                        <pre id="content"></pre>
+                    </div>
+                  
+                              </div>
+                    <div class="ui-block-b" style="height:200%"><button id="btn2" style="width:200px;height:250px" ></button></div>
+                    <div class="ui-block-c" style="height:200%"><button id="btn3" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-d" style="height:200%"><button id="btn4" style="width:200px;height:250px"></button></div>
+                </div>
+                <div class="ui-grid-c" style="height:200% ">
+                    <div class="ui-block-a" style="height:200%"><button id="btn5" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-b" style="height:200%"><button id="btn6" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-c" style="height:200%"><button id="btn7" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-d" style="height:200%"><button id="btn8" style="width:200px;height:250px"></button></div>
+                </div>
+                <div class="ui-grid-c" style="height:100% ">
+                    <div class="ui-block-a" style="height:100%"><button id="btn9" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-b" style="height:100%"><button id="btn10" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-c" style="height:100%"><button id="btn11" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-d" style="height:100%"><button id="btn12" style="width:200px;height:250px"></button></div>
+                </div>
+                <div class="ui-grid-c" style="height:200%">
+                    <div class="ui-block-a" style="height:200%"><button id="btn13" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-b" style="height:200%"><button id="btn14" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-c" style="height:200%"><button id="btn15" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-d" style="height:200%"><button id="btn16" style="width:200px;height:250px"></button></div>
+                </div>
+                <div class="ui-grid-c" style="height:200% ">
+                    <div class="ui-block-a" style="height:200%"><button id="btn17" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-b" style="height:200%"><button id="btn18" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-c" style="height:200%"><button id="btn19" style="width:200px;height:250px"></button></div>
+                    <div class="ui-block-d" style="height:200%"><button id="btn20" style="width:200px;height:250px"></button></div>
+                </div>
+                   s<a class="ui-btn" id="submit" > Submit </a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h3>Footer</h3>
+            </div>
+        </div>-->
+        
+        
+        
+    </body>
+</html>
+
